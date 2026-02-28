@@ -1,0 +1,26 @@
+{
+  "name": "yamasaki-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamasaki-engineer2002/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamasaki-engineer2002/portfolio/issues"
+  },
+  "homepage": "https://github.com/yamasaki-engineer2002/portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.97.3",
+    "vite": "^7.3.1"
+  }
+}
