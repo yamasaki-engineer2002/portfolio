@@ -1,0 +1,74 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.p-timeline {
+  position: relative;
+  padding-left: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    bottom: 8px;
+    width: 2px;
+    background-color: #cbd5e1;
+  }
+
+  @include desktop {
+    padding-left: 40px;
+  }
+}
+
+.p-timeline__item {
+  position: relative;
+  padding-bottom: 40px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.p-timeline__marker {
+  position: absolute;
+  left: -28px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: $color-bg-white;
+  border: 3px solid #cbd5e1;
+  border-radius: 50%;
+}
+
+.p-timeline__marker--current {
+  border-color: $color-primary;
+  background-color: $color-primary;
+}
+
+.p-timeline__content {
+  padding-left: 8px;
+}
+
+.p-timeline__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: $color-text-dark;
+  margin-bottom: 4px;
+}
+
+.p-timeline__period {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: $color-primary;
+  font-weight: 500;
+  background-color: $color-bg-blue-light;
+  padding: 2px 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.p-timeline__text {
+  font-size: 0.875rem;
+  color: $color-text-muted;
+  line-height: 1.8;
+}

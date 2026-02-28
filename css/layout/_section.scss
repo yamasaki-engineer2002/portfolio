@@ -1,0 +1,43 @@
+@use "../foundation/variables" as *;
+@use "../foundation/mixins" as *;
+
+.l-section {
+  padding: 80px 20px;
+
+  @include desktop {
+    padding: 100px 20px;
+  }
+}
+
+.l-section--gray {
+  background-color: $color-bg-gray;
+}
+
+.l-section__inner {
+  max-width: $max-width-content;
+  margin: 0 auto;
+}
+
+.l-section__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  color: $color-text-dark;
+  margin-bottom: 4px;
+
+  @include tablet {
+    font-size: 2rem;
+  }
+}
+
+.l-section__title--white {
+  color: $color-bg-white;
+}
+
+.l-section__subtitle {
+  font-size: 0.85rem;
+  text-align: center;
+  color: $color-text-light;
+  margin-bottom: 48px;
+  letter-spacing: 0.1em;
+}

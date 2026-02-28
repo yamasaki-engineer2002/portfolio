@@ -1,0 +1,9 @@
+@use "../../foundation/mixins" as *;
+
+.u-hide-sp {
+  display: none;
+
+  @include tablet {
+    display: inline;
+  }
+}

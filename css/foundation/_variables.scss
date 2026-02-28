@@ -1,0 +1,47 @@
+// ===================================
+// カラー
+// ===================================
+$color-primary: #1a56db;
+$color-primary-dark: #1444b0;
+$color-navy: #1e3a8a;
+$color-navy-dark: #172554;
+$color-dark: #0f172a;
+
+$color-text: #333;
+$color-text-dark: #1e293b;
+$color-text-muted: #64748b;
+$color-text-light: #94a3b8;
+$color-text-link: #475569;
+
+$color-bg-white: #fff;
+$color-bg-gray: #f8fafc;
+$color-bg-blue-light: #eff6ff;
+$color-border-blue: #dbeafe;
+
+// ===================================
+// ブレイクポイント
+// ===================================
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+
+// ===================================
+// レイアウト
+// ===================================
+$max-width-content: 1000px;
+$max-width-nav: 1100px;
+$header-height: 72px;
+
+// ===================================
+// 角丸
+// ===================================
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-round: 50px;
+
+// ===================================
+// シャドウ
+// ===================================
+$shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+$shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.2);

@@ -11,7 +11,7 @@ hamburger.addEventListener('click', () => {
 });
 
 // メニューリンククリックで閉じる
-menu.querySelectorAll('.header__link').forEach((link) => {
+menu.querySelectorAll('.l-header__link').forEach((link) => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('is-active');
     menu.classList.remove('is-open');
@@ -22,7 +22,7 @@ menu.querySelectorAll('.header__link').forEach((link) => {
 // ===================================
 // フェードインアニメーション（Intersection Observer）
 // ===================================
-const fadeInElements = document.querySelectorAll('.fade-in');
+const fadeInElements = document.querySelectorAll('.u-fade-in');
 
 const observer = new IntersectionObserver(
   (entries) => {

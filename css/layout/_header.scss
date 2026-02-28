@@ -1,0 +1,153 @@
+@use "../foundation/variables" as *;
+@use "../foundation/mixins" as *;
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: $shadow-md;
+}
+
+.l-header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $max-width-nav;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+.l-header__logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $color-primary;
+}
+
+// ハンバーガーメニュー
+.l-header__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.l-header__hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: $color-text;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.l-header__hamburger.is-active .l-header__hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.l-header__hamburger.is-active .l-header__hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.l-header__hamburger.is-active .l-header__hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+// モバイルメニュー
+.l-header__menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background-color: $color-bg-white;
+  padding: 80px 32px 32px;
+  transition: right 0.3s;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
+
+  &.is-open {
+    right: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  @include desktop {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    li {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.l-header__link {
+  display: block;
+  padding: 12px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: $color-text;
+  border-bottom: 1px solid #eee;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  @include desktop {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    color: $color-text-link;
+    border-bottom: none;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.l-header__link--cta {
+  margin-top: 16px;
+  padding: 12px 24px;
+  background-color: $color-primary;
+  color: $color-bg-white;
+  border: none;
+  border-radius: $radius-sm;
+  text-align: center;
+  transition: background-color 0.2s;
+
+  &:hover {
+    color: $color-bg-white;
+    background-color: $color-primary-dark;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    padding: 10px 24px;
+    color: $color-bg-white;
+
+    &:hover {
+      color: $color-bg-white;
+    }
+  }
+}

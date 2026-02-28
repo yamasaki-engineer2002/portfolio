@@ -1,0 +1,16 @@
+@use "../../foundation/mixins" as *;
+
+.p-services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
