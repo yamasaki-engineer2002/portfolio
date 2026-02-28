@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="木漏れ日珈琲（Komorebi Coffee） — 一杯の、ここちよい時間。スペシャルティコーヒーをハンドドリップで提供する、神宮前の小さなカフェ。">
+  <title>木漏れ日珈琲 | Komorebi Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.scss">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header" id="header">
+    <nav class="header__nav">
+      <a href="#hero" class="header__logo">Komorebi Coffee</a>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+      <ul class="header__menu" id="menu">
+        <li><a href="#concept" class="header__link">Concept</a></li>
+        <li><a href="#menu-section" class="header__link">Menu</a></li>
+        <li><a href="#gallery" class="header__link">Gallery</a></li>
+        <li><a href="#access" class="header__link">Access</a></li>
+        <li><a href="#cta" class="header__link header__link--cta">ご予約</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ヒーロー -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920&q=80');"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="hero__logo-text">Komorebi Coffee</p>
+        <h1 class="hero__name">木漏れ日珈琲</h1>
+        <p class="hero__tagline">一杯の、ここちよい時間。</p>
+        <p class="hero__description">スペシャルティコーヒーをハンドドリップで丁寧に。<br>静かな街角で、あなただけの時間をお過ごしください。</p>
+        <a href="#cta" class="btn btn--hero">ご予約はこちら</a>
+      </div>
+    </section>
+
+    <!-- Concept -->
+    <section class="section" id="concept">
+      <div class="section__inner">
+        <h2 class="section__title">Concept</h2>
+        <p class="section__subtitle">わたしたちの想い</p>
+        <div class="concept fade-in">
+          <div class="concept__image">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="ハンドドリップで丁寧に淹れるコーヒー" loading="lazy">
+          </div>
+          <div class="concept__text">
+            <h3 class="concept__heading">丁寧に淹れる、<br>ここちよい一杯を。</h3>
+            <p class="concept__body">
+              木漏れ日珈琲は、スペシャルティコーヒーをハンドドリップで一杯ずつ丁寧にお淹れする小さなカフェです。
+            </p>
+            <p class="concept__body">
+              豆の個性を最大限に引き出すため、焙煎から抽出まで一つひとつの工程にこだわっています。忙しい日常からふっと離れて、コーヒーの香りとともに穏やかな時間を過ごしていただけたら — それが私たちの願いです。
+            </p>
+            <p class="concept__body">
+              お気に入りの本を片手に、あるいは何もせずぼんやりと。木漏れ日のようにやわらかな空間で、あなただけの「ここちよい時間」を見つけてください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section section--latte" id="menu-section">
+      <div class="section__inner">
+        <h2 class="section__title">Menu</h2>
+        <p class="section__subtitle">おすすめメニュー</p>
+
+        <!-- Coffee -->
+        <h3 class="menu__category-title fade-in">Coffee</h3>
+        <div class="menu__grid">
+          <div class="menu-card fade-in">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="本日のハンドドリップコーヒー" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h4 class="menu-card__name">本日のハンドドリップ</h4>
+              <p class="menu-card__desc">日替わりの厳選豆を一杯ずつ丁寧に。</p>
+              <span class="menu-card__price">&yen;550</span>
+            </div>
+          </div>
+          <div class="menu-card fade-in">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400&q=80" alt="エスプレッソ" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h4 class="menu-card__name">エスプレッソ</h4>
+              <p class="menu-card__desc">濃厚でコク深い一杯。</p>
+              <span class="menu-card__price">&yen;450</span>
+            </div>
+          </div>
+          <div class="menu-card fade-in">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=80" alt="カフェラテ" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h4 class="menu-card__name">カフェラテ</h4>
+              <p class="menu-card__desc">まろやかなミルクとエスプレッソのハーモニー。</p>
+              <span class="menu-card__price">&yen;600</span>
+            </div>
+          </div>
+          <div class="menu-card fade-in">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?w=400&q=80" alt="木漏れ日ブレンド" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h4 class="menu-card__name">木漏れ日ブレンド</h4>
+              <p class="menu-card__desc">当店オリジナル。やさしい甘みと華やかな香り。</p>
+              <span class="menu-card__price">&yen;500</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sweets -->
+        <h3 class="menu__category-title fade-in">Sweets</h3>
+        <div class="menu__grid">
+          <div class="menu-card fade-in">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1508737027454-e6454ef45afd?w=400&q=80" alt="バスクチーズケーキ" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h4 class="menu-card__name">バスクチーズケーキ</h4>
+              <p class="menu-card__desc">濃厚でとろける食感の自家製ケーキ。</p>
+              <span class="menu-card__price">&yen;580</span>
+            </div>
+          </div>
+          <div class="menu-card fade-in">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=400&q=80" alt="季節のタルト" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h4 class="menu-card__name">季節のタルト</h4>
+              <p class="menu-card__desc">旬のフルーツを使った季節限定タルト。</p>
+              <span class="menu-card__price">&yen;620</span>
+            </div>
+          </div>
+          <div class="menu-card fade-in">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1558303926-f5b2079c431c?w=400&q=80" alt="スコーン" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h4 class="menu-card__name">スコーン</h4>
+              <p class="menu-card__desc">外はサクッ、中はしっとり。自家製クロテッドクリーム付き。</p>
+              <span class="menu-card__price">&yen;380</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food -->
+        <h3 class="menu__category-title fade-in">Food</h3>
+        <div class="menu__grid">
+          <div class="menu-card fade-in">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80" alt="本日のキッシュプレート" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h4 class="menu-card__name">本日のキッシュプレート</h4>
+              <p class="menu-card__desc">自家製キッシュにサラダとスープを添えて。</p>
+              <span class="menu-card__price">&yen;1,100</span>
+            </div>
+          </div>
+          <div class="menu-card fade-in">
+            <div class="menu-card__image">
+              <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&q=80" alt="クロックムッシュ" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h4 class="menu-card__name">クロックムッシュ</h4>
+              <p class="menu-card__desc">とろけるチーズとハムの贅沢ホットサンド。</p>
+              <span class="menu-card__price">&yen;980</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="section__inner">
+        <h2 class="section__title">Gallery</h2>
+        <p class="section__subtitle">店内の風景</p>
+        <div class="gallery fade-in">
+          <div class="gallery__item gallery__item--wide">
+            <img src="https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=800&q=80" alt="木漏れ日が差し込むカフェ店内" loading="lazy">
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="カウンター席でくつろぐ様子" loading="lazy">
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80" alt="丁寧にドリップされるコーヒー" loading="lazy">
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&q=80" alt="窓辺のテーブル席" loading="lazy">
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=600&q=80" alt="コーヒー豆のセレクション" loading="lazy">
+          </div>
+          <div class="gallery__item gallery__item--wide">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80" alt="温かみのある照明の店内" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access -->
+    <section class="section section--latte" id="access">
+      <div class="section__inner">
+        <h2 class="section__title">Access</h2>
+        <p class="section__subtitle">店舗情報</p>
+        <div class="access fade-in">
+          <div class="access__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.169!2d139.7055!3d35.6695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQwJzEwLjIiTiAxMznCsDQyJzE5LjgiRQ!5e0!3m2!1sja!2sjp"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="木漏れ日珈琲の地図">
+            </iframe>
+          </div>
+          <div class="access__info">
+            <dl class="access__list">
+              <div class="access__row">
+                <dt class="access__label">店名</dt>
+                <dd class="access__value">木漏れ日珈琲（Komorebi Coffee）</dd>
+              </div>
+              <div class="access__row">
+                <dt class="access__label">住所</dt>
+                <dd class="access__value">〒150-0001<br>東京都渋谷区神宮前3-15-8 木漏れ日ビル 1F</dd>
+              </div>
+              <div class="access__row">
+                <dt class="access__label">営業時間</dt>
+                <dd class="access__value">10:00 〜 19:00（L.O. 18:30）</dd>
+              </div>
+              <div class="access__row">
+                <dt class="access__label">定休日</dt>
+                <dd class="access__value">毎週水曜日</dd>
+              </div>
+              <div class="access__row">
+                <dt class="access__label">アクセス</dt>
+                <dd class="access__value">東京メトロ 表参道駅 A2出口 徒歩5分</dd>
+              </div>
+              <div class="access__row">
+                <dt class="access__label">席数</dt>
+                <dd class="access__value">18席（カウンター6席 / テーブル12席）</dd>
+              </div>
+              <div class="access__row">
+                <dt class="access__label">Wi-Fi</dt>
+                <dd class="access__value">無料Wi-Fi完備</dd>
+              </div>
+              <div class="access__row">
+                <dt class="access__label">電話</dt>
+                <dd class="access__value">03-XXXX-XXXX</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta">
+      <div class="section__inner">
+        <h2 class="cta__title">ご来店をお待ちしております</h2>
+        <p class="cta__text">ご予約・お問い合わせはお電話または下記ボタンよりお気軽にどうぞ。</p>
+        <a href="tel:03-XXXX-XXXX" class="btn btn--cta">お電話で予約する</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__logo">Komorebi Coffee</p>
+      <p class="footer__name">木漏れ日珈琲</p>
+      <p class="footer__address">〒150-0001 東京都渋谷区神宮前3-15-8 木漏れ日ビル 1F</p>
+      <div class="footer__sns">
+        <a href="#" class="footer__sns-link" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" class="footer__sns-link" aria-label="X (Twitter)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+      </div>
+      <p class="footer__copyright">&copy; 2026 Komorebi Coffee. All rights reserved.</p>
+      <p class="footer__credit">制作: <a href="../../index.html" class="footer__credit-link">山﨑 総司</a></p>
+    </div>
+  </footer>
+
+  <!-- ライトボックス -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="画像ギャラリー" aria-hidden="true">
+    <button class="lightbox__close" aria-label="閉じる">&times;</button>
+    <button class="lightbox__prev" aria-label="前の画像">&#8249;</button>
+    <button class="lightbox__next" aria-label="次の画像">&#8250;</button>
+    <div class="lightbox__content">
+      <img class="lightbox__image" id="lightbox-image" src="" alt="">
+    </div>
+    <p class="lightbox__counter" id="lightbox-counter"></p>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
