@@ -1,0 +1,27 @@
+/* =============================================
+   Animations
+   ============================================= */
+
+/* フェードイン（IntersectionObserver で .is-visible を付与） */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 遅延バリエーション */
+.fade-in--d1 { transition-delay: 0.1s; }
+.fade-in--d2 { transition-delay: 0.2s; }
+.fade-in--d3 { transition-delay: 0.3s; }
+.fade-in--d4 { transition-delay: 0.4s; }
+
+/* カウンターアニメーション用 */
+@keyframes countPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}

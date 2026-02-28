@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BrightCode Inc. のサービス一覧。Web制作・Webアプリ開発・DXコンサルティング・保守運用サポートの詳細をご紹介します。">
+  <title>SERVICE | BrightCode Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.scss">
+</head>
+<body>
+
+  <!-- === SHARED: Header === -->
+  <header class="header header--solid" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">BrightCode</a>
+      <nav class="header__nav">
+        <a href="index.html" class="header__link">TOP</a>
+        <a href="service.html" class="header__link">SERVICE</a>
+        <a href="works.html" class="header__link">WORKS</a>
+        <a href="company.html" class="header__link">COMPANY</a>
+        <a href="mailto:info@example.com" class="header__link header__link--cta">お問い合わせ</a>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+    </div>
+    <nav class="header__mobile-menu" id="mobileMenu">
+      <a href="index.html" class="header__mobile-link">TOP</a>
+      <a href="service.html" class="header__mobile-link">SERVICE</a>
+      <a href="works.html" class="header__mobile-link">WORKS</a>
+      <a href="company.html" class="header__mobile-link">COMPANY</a>
+      <a href="mailto:info@example.com" class="header__mobile-link header__mobile-link--cta">お問い合わせ</a>
+    </nav>
+    <div class="header__overlay" id="overlay"></div>
+  </header>
+  <!-- === /SHARED: Header === -->
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">TOP</a>
+          <span class="breadcrumb__separator">›</span>
+          <span class="breadcrumb__current">SERVICE</span>
+        </nav>
+        <h1 class="page-header__title">サービス</h1>
+      </div>
+    </section>
+
+    <!-- Service Detail -->
+    <section class="section service-detail">
+      <div class="container">
+        <div class="service-detail__item fade-in">
+          <div class="service-detail__icon">🌐</div>
+          <div class="service-detail__content">
+            <h2 class="service-detail__title">Web制作</h2>
+            <p class="service-detail__text">コーポレートサイト、ランディングページ、ECサイトなど、お客様のビジネスに最適なWebサイトを企画・設計・制作いたします。デザインからコーディング、CMS構築まで一気通貫で対応します。</p>
+            <ul class="service-detail__features">
+              <li class="service-detail__feature">レスポンシブデザイン対応</li>
+              <li class="service-detail__feature">SEO内部対策を標準実装</li>
+              <li class="service-detail__feature">WordPress / microCMS 等のCMS構築</li>
+              <li class="service-detail__feature">アクセシビリティに配慮した設計</li>
+            </ul>
+            <div class="service-detail__badges">
+              <span class="badge">HTML / CSS</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">WordPress</span>
+              <span class="badge">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-detail__item fade-in">
+          <div class="service-detail__icon">⚙️</div>
+          <div class="service-detail__content">
+            <h2 class="service-detail__title">Webアプリ開発</h2>
+            <p class="service-detail__text">業務効率化ツール、予約管理システム、SaaSプロダクトなど、お客様の課題を解決するWebアプリケーションを設計・開発します。要件定義からリリース後の改善まで伴走します。</p>
+            <ul class="service-detail__features">
+              <li class="service-detail__feature">要件定義から設計・開発・テストまで一貫対応</li>
+              <li class="service-detail__feature">REST API / GraphQL によるモダンな設計</li>
+              <li class="service-detail__feature">クラウドインフラ (AWS / GCP) 構築</li>
+              <li class="service-detail__feature">CI/CD パイプラインの構築</li>
+            </ul>
+            <div class="service-detail__badges">
+              <span class="badge">React</span>
+              <span class="badge">Next.js</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-detail__item fade-in">
+          <div class="service-detail__icon">📊</div>
+          <div class="service-detail__content">
+            <h2 class="service-detail__title">DXコンサルティング</h2>
+            <p class="service-detail__text">業務フローの可視化・分析から、最適なITツールの選定・導入支援、社内研修まで。デジタル技術を活用した業務改善と組織変革をトータルでサポートします。</p>
+            <ul class="service-detail__features">
+              <li class="service-detail__feature">現状分析・課題整理・ロードマップ策定</li>
+              <li class="service-detail__feature">SaaS / ノーコードツールの選定・導入支援</li>
+              <li class="service-detail__feature">データ活用・BI ダッシュボード構築</li>
+              <li class="service-detail__feature">社内IT人材の育成支援</li>
+            </ul>
+            <div class="service-detail__badges">
+              <span class="badge">業務分析</span>
+              <span class="badge">BI</span>
+              <span class="badge">RPA</span>
+              <span class="badge">研修</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-detail__item fade-in">
+          <div class="service-detail__icon">🛡️</div>
+          <div class="service-detail__content">
+            <h2 class="service-detail__title">保守・運用サポート</h2>
+            <p class="service-detail__text">Webサイト・アプリの納品後も安心してご利用いただけるよう、定期的な更新・監視・セキュリティ対策を含む継続的なサポートプランをご用意しています。</p>
+            <ul class="service-detail__features">
+              <li class="service-detail__feature">コンテンツ更新・ページ追加対応</li>
+              <li class="service-detail__feature">サーバー監視・障害対応</li>
+              <li class="service-detail__feature">セキュリティアップデート・脆弱性対策</li>
+              <li class="service-detail__feature">月次レポート・改善提案</li>
+            </ul>
+            <div class="service-detail__badges">
+              <span class="badge">監視</span>
+              <span class="badge">セキュリティ</span>
+              <span class="badge">バックアップ</span>
+              <span class="badge">SSL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flow -->
+    <section class="section section--alt">
+      <div class="container">
+        <p class="section-subtitle">Flow</p>
+        <h2 class="section-title">制作の流れ</h2>
+        <div class="flow">
+          <div class="flow__steps">
+            <div class="flow__step fade-in">
+              <span class="flow__number">1</span>
+              <p class="flow__label">ヒアリング</p>
+              <p class="flow__desc">課題・ご要望を<br>丁寧にお伺いします</p>
+            </div>
+            <div class="flow__step fade-in fade-in--d1">
+              <span class="flow__number">2</span>
+              <p class="flow__label">ご提案</p>
+              <p class="flow__desc">最適なプランと<br>お見積りをご提示</p>
+            </div>
+            <div class="flow__step fade-in fade-in--d2">
+              <span class="flow__number">3</span>
+              <p class="flow__label">制作・開発</p>
+              <p class="flow__desc">進捗を共有しながら<br>制作を進めます</p>
+            </div>
+            <div class="flow__step fade-in fade-in--d3">
+              <span class="flow__number">4</span>
+              <p class="flow__label">納品</p>
+              <p class="flow__desc">テスト完了後<br>本番環境へ公開</p>
+            </div>
+            <div class="flow__step fade-in fade-in--d4">
+              <span class="flow__number">5</span>
+              <p class="flow__label">サポート</p>
+              <p class="flow__desc">運用・改善を<br>継続的に支援</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="cta-banner__title fade-in">まずはお気軽にご相談ください</h2>
+        <p class="cta-banner__text fade-in fade-in--d1">ご予算やスケジュールに合わせた最適なプランをご提案いたします。</p>
+        <a href="mailto:info@example.com" class="btn btn--white btn--lg fade-in fade-in--d2">お問い合わせはこちら</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- === SHARED: Footer === -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__logo">BrightCode</p>
+          <p class="footer__description">テクノロジーで、ビジネスを次のステージへ。<br>Web制作・アプリ開発・DXコンサルティング。</p>
+        </div>
+        <div>
+          <p class="footer__heading">Pages</p>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">TOP</a>
+            <a href="service.html" class="footer__link">SERVICE</a>
+            <a href="works.html" class="footer__link">WORKS</a>
+            <a href="company.html" class="footer__link">COMPANY</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__heading">Contact</p>
+          <div class="footer__links">
+            <a href="mailto:info@example.com" class="footer__link">info@example.com</a>
+            <span class="footer__link">東京都渋谷区道玄坂1-XX-X</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 BrightCode Inc. All Rights Reserved.</p>
+        <p class="footer__credit">制作: <a href="../../index.html">山﨑 総司</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- === /SHARED: Footer === -->
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

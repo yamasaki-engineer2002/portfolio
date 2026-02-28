@@ -1,0 +1,22 @@
+/* =============================================
+   BrightCode Inc. — Corporate Site
+   Entry Point
+   ============================================= */
+
+/* Global */
+@use "global/tokens";
+@use "global/reset";
+@use "global/typography";
+@use "global/layout";
+@use "global/components";
+@use "global/animations";
+
+/* Partials (共通パーツ) */
+@use "partials/header";
+@use "partials/footer";
+
+/* Pages */
+@use "pages/top";
+@use "pages/service";
+@use "pages/works";
+@use "pages/company";

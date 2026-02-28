@@ -1,0 +1,90 @@
+/* =============================================
+   Footer
+   ============================================= */
+
+.footer {
+  background-color: var(--color-bg-dark);
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-lg);
+
+  &__inner {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  &__top {
+    display: grid;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1.5fr 1fr 1fr;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  &__logo {
+    font-family: var(--font-heading);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--color-white);
+  }
+
+  &__description {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-base);
+  }
+
+  &__heading {
+    font-family: var(--font-heading);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-sm);
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  &__link {
+    font-size: var(--fs-sm);
+    transition: color var(--transition-fast);
+    &:hover { color: var(--color-white); }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    padding-top: var(--space-lg);
+    font-size: var(--fs-xs);
+    text-align: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__credit {
+    a {
+      color: var(--color-accent);
+      transition: color var(--transition-fast);
+      &:hover { color: var(--color-accent-hover); }
+    }
+  }
+}

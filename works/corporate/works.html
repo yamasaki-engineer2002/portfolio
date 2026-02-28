@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BrightCode Inc. の制作実績。Web制作・Webアプリ開発・DXコンサルティングの事例をご紹介します。">
+  <title>WORKS | BrightCode Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.scss">
+</head>
+<body>
+
+  <!-- === SHARED: Header === -->
+  <header class="header header--solid" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">BrightCode</a>
+      <nav class="header__nav">
+        <a href="index.html" class="header__link">TOP</a>
+        <a href="service.html" class="header__link">SERVICE</a>
+        <a href="works.html" class="header__link">WORKS</a>
+        <a href="company.html" class="header__link">COMPANY</a>
+        <a href="mailto:info@example.com" class="header__link header__link--cta">お問い合わせ</a>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+    </div>
+    <nav class="header__mobile-menu" id="mobileMenu">
+      <a href="index.html" class="header__mobile-link">TOP</a>
+      <a href="service.html" class="header__mobile-link">SERVICE</a>
+      <a href="works.html" class="header__mobile-link">WORKS</a>
+      <a href="company.html" class="header__mobile-link">COMPANY</a>
+      <a href="mailto:info@example.com" class="header__mobile-link header__mobile-link--cta">お問い合わせ</a>
+    </nav>
+    <div class="header__overlay" id="overlay"></div>
+  </header>
+  <!-- === /SHARED: Header === -->
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">TOP</a>
+          <span class="breadcrumb__separator">›</span>
+          <span class="breadcrumb__current">WORKS</span>
+        </nav>
+        <h1 class="page-header__title">制作実績</h1>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Filter Tabs -->
+        <div class="filter" id="filter">
+          <button class="filter__btn is-active" data-filter="all">All</button>
+          <button class="filter__btn" data-filter="web">Web制作</button>
+          <button class="filter__btn" data-filter="app">Webアプリ</button>
+          <button class="filter__btn" data-filter="dx">DX</button>
+        </div>
+
+        <!-- Works Grid -->
+        <div class="works-grid" id="worksGrid">
+
+          <div class="works-grid__item fade-in" data-category="web">
+            <div class="works-grid__image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="ECサイトリニューアル" loading="lazy">
+            </div>
+            <div class="works-grid__body">
+              <div class="works-grid__tags">
+                <span class="badge">Web制作</span>
+                <span class="badge">EC</span>
+              </div>
+              <h3 class="works-grid__client">株式会社ファッションモール</h3>
+              <p class="works-grid__desc">アパレルECサイトのフルリニューアル。UI/UX改善により売上120%向上を実現。</p>
+            </div>
+          </div>
+
+          <div class="works-grid__item fade-in fade-in--d1" data-category="app">
+            <div class="works-grid__image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="在庫管理システム" loading="lazy">
+            </div>
+            <div class="works-grid__body">
+              <div class="works-grid__tags">
+                <span class="badge">Webアプリ</span>
+                <span class="badge">SaaS</span>
+              </div>
+              <h3 class="works-grid__client">株式会社ロジスティクスプロ</h3>
+              <p class="works-grid__desc">クラウド型在庫管理システムの開発。手作業を80%削減し業務効率化を実現。</p>
+            </div>
+          </div>
+
+          <div class="works-grid__item fade-in fade-in--d2" data-category="dx">
+            <div class="works-grid__image">
+              <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80" alt="製造業DX" loading="lazy">
+            </div>
+            <div class="works-grid__body">
+              <div class="works-grid__tags">
+                <span class="badge">DX</span>
+                <span class="badge">製造業</span>
+              </div>
+              <h3 class="works-grid__client">東海精密工業株式会社</h3>
+              <p class="works-grid__desc">基幹システム刷新と業務フローのデジタル化による全社DX推進プロジェクト。</p>
+            </div>
+          </div>
+
+          <div class="works-grid__item fade-in" data-category="web">
+            <div class="works-grid__image">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="コーポレートサイト" loading="lazy">
+            </div>
+            <div class="works-grid__body">
+              <div class="works-grid__tags">
+                <span class="badge">Web制作</span>
+                <span class="badge">コーポレート</span>
+              </div>
+              <h3 class="works-grid__client">弁護士法人リーガルブリッジ</h3>
+              <p class="works-grid__desc">信頼感を重視したコーポレートサイトリニューアル。問い合わせ数が2倍に増加。</p>
+            </div>
+          </div>
+
+          <div class="works-grid__item fade-in fade-in--d1" data-category="app">
+            <div class="works-grid__image">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="予約管理システム" loading="lazy">
+            </div>
+            <div class="works-grid__body">
+              <div class="works-grid__tags">
+                <span class="badge">Webアプリ</span>
+                <span class="badge">予約管理</span>
+              </div>
+              <h3 class="works-grid__client">メディカルクリニック渋谷</h3>
+              <p class="works-grid__desc">患者向けオンライン予約システムの開発。電話問い合わせを60%削減。</p>
+            </div>
+          </div>
+
+          <div class="works-grid__item fade-in fade-in--d2" data-category="dx">
+            <div class="works-grid__image">
+              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80" alt="小売業DX" loading="lazy">
+            </div>
+            <div class="works-grid__body">
+              <div class="works-grid__tags">
+                <span class="badge">DX</span>
+                <span class="badge">小売</span>
+              </div>
+              <h3 class="works-grid__client">株式会社フレッシュマート</h3>
+              <p class="works-grid__desc">POSデータ分析基盤の構築とBIダッシュボード導入で経営判断を迅速化。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="cta-banner__title fade-in">プロジェクトのご相談はお気軽に</h2>
+        <p class="cta-banner__text fade-in fade-in--d1">お客様の課題に合わせた最適なソリューションをご提案します。</p>
+        <a href="mailto:info@example.com" class="btn btn--white btn--lg fade-in fade-in--d2">お問い合わせはこちら</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- === SHARED: Footer === -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__logo">BrightCode</p>
+          <p class="footer__description">テクノロジーで、ビジネスを次のステージへ。<br>Web制作・アプリ開発・DXコンサルティング。</p>
+        </div>
+        <div>
+          <p class="footer__heading">Pages</p>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">TOP</a>
+            <a href="service.html" class="footer__link">SERVICE</a>
+            <a href="works.html" class="footer__link">WORKS</a>
+            <a href="company.html" class="footer__link">COMPANY</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__heading">Contact</p>
+          <div class="footer__links">
+            <a href="mailto:info@example.com" class="footer__link">info@example.com</a>
+            <span class="footer__link">東京都渋谷区道玄坂1-XX-X</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 BrightCode Inc. All Rights Reserved.</p>
+        <p class="footer__credit">制作: <a href="../../index.html">山﨑 総司</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- === /SHARED: Footer === -->
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/works-filter.js"></script>
+
+</body>
+</html>

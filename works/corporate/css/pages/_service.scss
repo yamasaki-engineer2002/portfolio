@@ -1,0 +1,136 @@
+/* =============================================
+   SERVICE Page
+   ============================================= */
+
+/* --- Service Detail --- */
+.service-detail {
+  &__item {
+    display: grid;
+    gap: var(--space-lg);
+    padding-block: var(--space-xl);
+    border-bottom: 1px solid var(--color-border);
+
+    &:last-child { border-bottom: none; }
+
+    @media (min-width: 768px) {
+      grid-template-columns: 64px 1fr;
+    }
+  }
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(45, 140, 240, 0.08);
+    border-radius: var(--radius-md);
+    font-size: 1.75rem;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  &__title {
+    font-family: var(--font-heading);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-semibold);
+  }
+
+  &__text {
+    font-size: var(--fs-base);
+    color: var(--color-text-sub);
+    line-height: var(--lh-base);
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em;
+    font-size: var(--fs-sm);
+    color: var(--color-text);
+
+    &::before {
+      content: "✓";
+      color: var(--color-accent);
+      font-weight: var(--fw-bold);
+      flex-shrink: 0;
+    }
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: var(--space-xs);
+  }
+}
+
+/* --- Flow --- */
+.flow {
+  &__steps {
+    display: grid;
+    gap: var(--space-md);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(5, 1fr);
+      gap: var(--space-sm);
+    }
+  }
+
+  &__step {
+    text-align: center;
+    padding: var(--space-md);
+    position: relative;
+
+    @media (min-width: 768px) {
+      /* 矢印（最後以外） */
+      &:not(:last-child)::after {
+        content: "→";
+        position: absolute;
+        right: -0.75em;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: var(--fs-lg);
+        color: var(--color-text-light);
+      }
+    }
+  }
+
+  &__number {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+    border-radius: 50%;
+    margin-bottom: var(--space-sm);
+  }
+
+  &__label {
+    font-family: var(--font-heading);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    margin-bottom: 0.25rem;
+  }
+
+  &__desc {
+    font-size: var(--fs-xs);
+    color: var(--color-text-sub);
+  }
+}

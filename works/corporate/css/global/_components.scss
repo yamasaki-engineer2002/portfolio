@@ -1,0 +1,140 @@
+/* =============================================
+   Shared Components
+   ============================================= */
+
+/* --- Button --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.875em 2em;
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+
+  &:hover { transform: translateY(-1px); }
+
+  &--primary {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    &:hover { background-color: var(--color-accent-hover); }
+  }
+
+  &--outline {
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+    &:hover {
+      background-color: var(--color-accent);
+      color: var(--color-white);
+    }
+  }
+
+  &--white {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    &:hover { background-color: #F0F4F8; }
+  }
+
+  &--lg {
+    padding: 1em 2.5em;
+    font-size: var(--fs-base);
+  }
+}
+
+/* --- Badge --- */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  border-radius: 100px;
+  background-color: rgba(45, 140, 240, 0.1);
+  color: var(--color-accent);
+}
+
+/* --- Breadcrumb --- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: var(--fs-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-sm);
+
+  a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color var(--transition-fast);
+    &:hover { color: var(--color-white); }
+  }
+
+  &__separator {
+    font-size: var(--fs-xs);
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &__current {
+    color: var(--color-white);
+  }
+}
+
+/* --- Page Header (下層ページ共通) --- */
+.page-header {
+  background-color: var(--color-primary);
+  padding-top: 120px;
+  padding-bottom: var(--space-xl);
+  text-align: center;
+
+  &__title {
+    font-family: var(--font-heading);
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    color: var(--color-white);
+
+    @media (min-width: 768px) {
+      font-size: var(--fs-4xl);
+    }
+  }
+}
+
+/* --- Card (汎用) --- */
+.card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+  }
+
+  &__icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  &__title {
+    font-family: var(--font-heading);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--space-xs);
+  }
+
+  &__text {
+    font-size: var(--fs-sm);
+    color: var(--color-text-sub);
+    line-height: var(--lh-base);
+  }
+}
+
+/* --- Utility --- */
+.u-hide-sp {
+  display: none;
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}
