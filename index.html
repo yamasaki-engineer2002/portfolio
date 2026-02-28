@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Webエンジニア 山﨑総司のポートフォリオサイト。WordPress制作・LP制作・Webシステム開発まで、安心して長く使える設計を重視した開発を提供します。">
+  <title>山﨑 総司 | Webエンジニア ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ナビゲーション -->
+  <header class="header" id="header">
+    <nav class="header__nav">
+      <a href="#hero" class="header__logo">S.Yamasaki</a>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+      <ul class="header__menu" id="menu">
+        <li><a href="#services" class="header__link">できること</a></li>
+        <li><a href="#strengths" class="header__link">強み</a></li>
+        <li><a href="#career" class="header__link">経歴</a></li>
+        <li><a href="#skills" class="header__link">技術</a></li>
+        <li><a href="#availability" class="header__link">稼働時間</a></li>
+        <li><a href="#contact" class="header__link header__link--cta">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ヒーローセクション -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="hero__greeting">はじめまして</p>
+        <h1 class="hero__name">山﨑 総司</h1>
+        <p class="hero__title">Web Engineer</p>
+        <p class="hero__catchcopy">安心して長く使える設計を、<br>あなたのビジネスに。</p>
+        <p class="hero__description">
+          WordPressによるホームページ制作・改修、LP制作、Webシステム開発まで、<br class="hide-sp">
+          官公庁・大手企業向け開発 × セキュリティ実務経験を活かした<br class="hide-sp">
+          トラブルが起きにくく、保守しやすいWeb構築をご提供します。
+        </p>
+        <a href="#contact" class="hero__cta">お気軽にご相談ください</a>
+      </div>
+    </section>
+
+    <!-- できること -->
+    <section class="section section--gray" id="services">
+      <div class="section__inner">
+        <h2 class="section__title">できること</h2>
+        <p class="section__subtitle">対応可能な業務内容</p>
+        <div class="cards">
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            </div>
+            <h3 class="card__title">WordPress制作・改修</h3>
+            <p class="card__text">WordPressを用いたホームページの新規制作から既存サイトの改修まで対応します。</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="card__title">コーポレートサイト / LP制作</h3>
+            <p class="card__text">企業の顔となるコーポレートサイトや、集客・訴求に特化したランディングページを制作します。</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="card__title">HTML / CSS / JS コーディング</h3>
+            <p class="card__text">デザインカンプからの正確なコーディング。セマンティックで保守しやすいコードを書きます。</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3 class="card__title">フォーム等の機能実装</h3>
+            <p class="card__text">お問い合わせフォームをはじめ、Webサイトに必要な各種機能を実装します。</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="card__title">修正・不具合対応</h3>
+            <p class="card__text">既存サイトの修正や不具合対応もお任せください。一部修正のみ・小規模案件も歓迎です。</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="card__title">レスポンシブ対応</h3>
+            <p class="card__text">スマートフォン・タブレット・PCすべてで快適に閲覧できるレスポンシブデザインを実装します。</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="card__title">セキュリティ対策</h3>
+            <p class="card__text">脆弱性診断の実務経験を活かし、セキュリティを考慮した安全な設計・実装を行います。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 強み -->
+    <section class="section" id="strengths">
+      <div class="section__inner">
+        <h2 class="section__title">強み</h2>
+        <p class="section__subtitle">選ばれる3つの理由</p>
+        <div class="strengths">
+          <div class="strength fade-in">
+            <span class="strength__number">01</span>
+            <h3 class="strength__title">セキュリティ実務経験</h3>
+            <p class="strength__text">約1年半、大手企業向け脆弱性診断業務を担当。安全性を意識した設計・コーディングが可能です。</p>
+          </div>
+          <div class="strength fade-in">
+            <span class="strength__number">02</span>
+            <h3 class="strength__title">官公庁・大手企業案件の<br>開発経験</h3>
+            <p class="strength__text">現在、IT企業にて官公庁・大手企業向け案件を中心にWeb開発を担当。品質・納期・報連相を重視した開発体制に慣れています。</p>
+          </div>
+          <div class="strength fade-in">
+            <span class="strength__number">03</span>
+            <h3 class="strength__title">わかりやすい説明・<br>丁寧な対応</h3>
+            <p class="strength__text">専門用語を極力使わず、非エンジニアの方にもわかりやすく説明します。安心してお任せいただけます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 実務経歴 -->
+    <section class="section section--gray" id="career">
+      <div class="section__inner">
+        <h2 class="section__title">実務経歴</h2>
+        <p class="section__subtitle">Career</p>
+        <div class="timeline">
+          <div class="timeline__item fade-in">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">IT専門学校 卒業</h3>
+              <p class="timeline__text">長崎のIT専門学校にてプログラミング・ネットワーク等の基礎を学ぶ。</p>
+            </div>
+          </div>
+          <div class="timeline__item fade-in">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">セキュリティエンジニア</h3>
+              <span class="timeline__period">約1年半</span>
+              <p class="timeline__text">大手企業向け脆弱性診断業務を担当。Webアプリケーションのセキュリティ検査を通じて、安全なコーディングの知見を蓄積。</p>
+            </div>
+          </div>
+          <div class="timeline__item fade-in">
+            <div class="timeline__marker timeline__marker--current"></div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Webエンジニア（現職）</h3>
+              <span class="timeline__period">現在</span>
+              <p class="timeline__text">IT企業にて官公庁・大手企業向け案件を中心に、フロントエンド / バックエンドのWeb開発を担当。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 使用技術 -->
+    <section class="section" id="skills">
+      <div class="section__inner">
+        <h2 class="section__title">使用技術</h2>
+        <p class="section__subtitle">Skills</p>
+        <div class="skills">
+          <div class="skills__category fade-in">
+            <h3 class="skills__category-title">言語</h3>
+            <div class="skills__badges">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">PHP</span>
+            </div>
+          </div>
+          <div class="skills__category fade-in">
+            <h3 class="skills__category-title">フレームワーク・CMS</h3>
+            <div class="skills__badges">
+              <span class="badge">WordPress</span>
+              <span class="badge">Laravel</span>
+            </div>
+          </div>
+          <div class="skills__category fade-in">
+            <h3 class="skills__category-title">ツール</h3>
+            <div class="skills__badges">
+              <span class="badge">Git</span>
+              <span class="badge">Docker</span>
+              <span class="badge">Gulp</span>
+              <span class="badge">Cursor</span>
+              <span class="badge">Claude Code</span>
+              <span class="badge">Figma</span>
+              <span class="badge">Adobe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 稼働時間 -->
+    <section class="section section--gray" id="availability">
+      <div class="section__inner">
+        <h2 class="section__title">稼働時間</h2>
+        <p class="section__subtitle">Availability</p>
+        <div class="availability fade-in">
+          <div class="availability__items">
+            <div class="availability__item">
+              <span class="availability__label">平日</span>
+              <span class="availability__value">1〜2時間</span>
+            </div>
+            <div class="availability__item">
+              <span class="availability__label">休日</span>
+              <span class="availability__value">最大7時間</span>
+            </div>
+          </div>
+          <p class="availability__note">※ 納期や緊急案件は柔軟に対応可能です。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ CTA -->
+    <section class="section section--cta" id="contact">
+      <div class="section__inner">
+        <h2 class="section__title section__title--white">お問い合わせ</h2>
+        <p class="contact__lead">
+          「セキュリティ面が不安」「長く安心して使えるサイトにしたい」<br>
+          そんな方は、ぜひ一度ご相談ください。
+        </p>
+        <p class="contact__sub">ご相談・お見積りのみでも大歓迎です。</p>
+        <a href="mailto:example@example.com" class="contact__button">メールで相談する</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2026 Soshi Yamasaki. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
