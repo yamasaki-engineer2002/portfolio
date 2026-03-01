@@ -1,4 +1,5 @@
 @use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
 
 .c-card {
   background-color: $color-bg-white;
@@ -22,7 +23,12 @@
   background-color: $color-bg-blue-light;
   border-radius: $radius-md;
   color: $color-primary;
+  margin-inline: auto;
   margin-bottom: 16px;
+
+  @include tablet {
+    margin-inline: 0;
+  }
 }
 
 .c-card__title {
@@ -30,6 +36,11 @@
   font-weight: 700;
   color: $color-text-dark;
   margin-bottom: 8px;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .c-card__text {
