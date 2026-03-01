@@ -57,14 +57,14 @@
 
 /* --- Breadcrumb Bar --- */
 .breadcrumb-bar {
-  padding-top: var(--space-md);
-  padding-bottom: var(--space-sm);
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-xs);
 
   + .section {
-    padding-top: var(--space-lg);
+    padding-top: var(--space-md);
 
     @media (min-width: 768px) {
-      padding-top: var(--space-xl);
+      padding-top: var(--space-lg);
     }
   }
 }
@@ -84,7 +84,7 @@
 
   &__separator {
     font-size: var(--fs-xs);
-    color: var(--color-border);
+    color: var(--color-text-sub);
   }
 
   &__current {
@@ -96,9 +96,14 @@
 /* --- Page Header (下層ページ共通) --- */
 .page-header {
   background-color: var(--color-primary);
-  padding-top: 120px;
-  padding-bottom: 64px;
+  padding-top: 100px;
+  padding-bottom: 52px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 64px;
+  }
 
   &__title {
     font-family: var(--font-heading);

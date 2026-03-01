@@ -3,42 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="株式会社ブライトコードの企業情報。企業理念・会社概要・アクセスをご紹介します。">
-  <title>COMPANY | BrightCode Inc.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.scss">
+  <meta name="description" content="{{description}}">
+  <title>{{title}}</title>
+  {{> head-common}}
+  <meta property="og:title" content="{{ogTitle}}">
+  <meta property="og:description" content="{{ogDescription}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ogUrl}}">
+  <meta property="og:image" content="https://yamasaki-engineer.tech/images/ogp.png">
+  <meta property="og:site_name" content="山﨑 総司 ポートフォリオ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{twitterTitle}}">
+  <meta name="twitter:description" content="{{twitterDescription}}">
+  <meta name="twitter:image" content="https://yamasaki-engineer.tech/images/ogp.png">
 </head>
 <body>
 
-  <!-- === SHARED: Header === -->
-  <header class="header header--solid" id="header">
-    <div class="header__inner">
-      <a href="index.html" class="header__logo">BrightCode</a>
-      <nav class="header__nav">
-        <a href="index.html" class="header__link">TOP</a>
-        <a href="service.html" class="header__link">SERVICE</a>
-        <a href="works.html" class="header__link">WORKS</a>
-        <a href="company.html" class="header__link">COMPANY</a>
-        <a href="mailto:yamasaki.engineer2002@gmail.com" class="header__link header__link--cta">お問い合わせ</a>
-      </nav>
-      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
-        <span class="header__hamburger-line"></span>
-        <span class="header__hamburger-line"></span>
-        <span class="header__hamburger-line"></span>
-      </button>
-    </div>
-    <nav class="header__mobile-menu" id="mobileMenu">
-      <a href="index.html" class="header__mobile-link">TOP</a>
-      <a href="service.html" class="header__mobile-link">SERVICE</a>
-      <a href="works.html" class="header__mobile-link">WORKS</a>
-      <a href="company.html" class="header__mobile-link">COMPANY</a>
-      <a href="mailto:yamasaki.engineer2002@gmail.com" class="header__mobile-link header__mobile-link--cta">お問い合わせ</a>
-    </nav>
-    <div class="header__overlay" id="overlay"></div>
-  </header>
-  <!-- === /SHARED: Header === -->
+  {{> header}}
 
   <main>
 
@@ -155,51 +136,13 @@
       </div>
     </section>
 
-    <!-- CTA Banner -->
-    <section class="cta-banner">
-      <div class="container">
-        <h2 class="cta-banner__title fade-in">お気軽にお問い合わせください</h2>
-        <p class="cta-banner__text fade-in fade-in--d1">プロジェクトのご相談・お見積りは無料です。</p>
-        <a href="mailto:yamasaki.engineer2002@gmail.com" class="btn btn--white btn--lg fade-in fade-in--d2">お問い合わせはこちら</a>
-      </div>
-    </section>
+    {{> cta-banner}}
 
   </main>
 
-  <!-- === SHARED: Footer === -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <p class="footer__logo">BrightCode</p>
-          <p class="footer__description">テクノロジーで、ビジネスを次のステージへ。<br>Web制作・アプリ開発・DXコンサルティング。</p>
-        </div>
-        <div>
-          <p class="footer__heading">Pages</p>
-          <div class="footer__links">
-            <a href="index.html" class="footer__link">TOP</a>
-            <a href="service.html" class="footer__link">SERVICE</a>
-            <a href="works.html" class="footer__link">WORKS</a>
-            <a href="company.html" class="footer__link">COMPANY</a>
-          </div>
-        </div>
-        <div>
-          <p class="footer__heading">Contact</p>
-          <div class="footer__links">
-            <a href="mailto:yamasaki.engineer2002@gmail.com" class="footer__link">yamasaki.engineer2002@gmail.com</a>
-            <span class="footer__link">東京都渋谷区道玄坂1-XX-X</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2025 BrightCode Inc. All Rights Reserved.</p>
-        <p class="footer__credit">制作: <a href="../../index.html">山﨑 総司</a></p>
-      </div>
-    </div>
-  </footer>
-  <!-- === /SHARED: Footer === -->
+  {{> footer}}
 
-  <script type="module" src="js/main.js"></script>
+  {{> scripts}}
 
 </body>
 </html>

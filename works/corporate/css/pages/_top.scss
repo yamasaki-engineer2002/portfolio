@@ -27,7 +27,11 @@
     max-width: var(--container-max);
     margin-inline: auto;
     padding-inline: var(--container-padding);
-    padding-block: 120px var(--space-3xl);
+    padding-block: 80px var(--space-2xl);
+
+    @media (min-width: 768px) {
+      padding-block: 120px var(--space-3xl);
+    }
   }
 
   &__subtitle {
@@ -175,7 +179,7 @@
 .cta-banner {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   text-align: center;
-  padding-block: var(--space-2xl);
+  padding-block: var(--space-xl);
 
   @media (min-width: 768px) {
     padding-block: var(--space-3xl);

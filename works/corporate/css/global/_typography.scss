@@ -26,10 +26,11 @@ h4 { font-size: var(--fs-lg); }
   font-size: var(--fs-2xl);
   font-weight: var(--fw-bold);
   text-align: center;
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-lg);
 
   @media (min-width: 768px) {
     font-size: var(--fs-3xl);
+    margin-bottom: var(--space-xl);
   }
 }
 
@@ -40,7 +41,7 @@ h4 { font-size: var(--fs-lg); }
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-xs);
 }
 
 p {

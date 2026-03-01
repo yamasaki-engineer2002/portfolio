@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && mkdir -p dist/images && cp images/ogp.png dist/images/",
     "preview": "vite preview"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/yamasaki-engineer2002/portfolio#readme",
   "devDependencies": {
     "sass": "^1.97.3",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "vite-plugin-handlebars": "^2.0.0"
   }
 }
