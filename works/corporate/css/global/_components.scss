@@ -113,7 +113,14 @@
   }
 
   &__icon {
-    font-size: 2rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(45, 140, 240, 0.08);
+    border-radius: var(--radius-md);
+    color: var(--color-accent);
     margin-bottom: var(--space-sm);
   }
 
